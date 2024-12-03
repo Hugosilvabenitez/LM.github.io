@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            background-color: aqua;
+            color: white;
+            padding: 11px;
+            text-align: left;
+            animation: colorChange 3s infinite;
+        }
+        @keyframes colorChange {
+            0% { background-color: aqua; }
+            50% { background-color: coral; }
+            100% { background-color: aqua; }
+        }
+        .tabla {
+            border: 0;
+            padding: 12px;
+            border-spacing: 5px;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        #p {
+            text-align: left;
+        }
+        .idioma-nivel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .transformado {
+            display: inline-block;
+            transform: rotate(70deg);
+            background-color: bisque;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        a:hover {color:#5CB2B3; cursor:hand;  font-weight:normal;  font-size:24px;   text-decoration:none;
+                        font-family:verdana, arial, helvetica, sans-serif;}
+
+        a:visited {color:yellow;   font-weight:    normal;  font-size:  18px; text-decoration:    none;
+                         font-family:   verdana,  arial,  helvetica,  sans-serif}
+    </style>
+</head>
+<body>
+    <form action="hsilben979@g.educaand.es" method="post" enctype="text/plain">
+        <h2 align="center">CURRICULUM</h2>
+        <hr>
+
+        <table class="tabla" border="1" cellpadding="10" cellspacing="5">
+            <tr>
+              
+                <td style="background-color: #e0f7fa; width: 50%;" valign="top">
+                    <h3 style="font-family: Sans-serif">DATOS PERSONALES</h3>
+                    <p id="p"><label for="Nombre">Escribe tu nombre </label></p>
+                    <input type="text" id="Nombre" name="Nombre" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Apellidos">Escribe tus Apellidos </label></p>
+                    <input type="text" id="Apellidos" name="Apellidos" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Teléfono">Tu Teléfono </label></p>
+                    <input type="text" id="Teléfono" name="Teléfono" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Dirección">Tu Dirección </label></p>
+                    <input type="text" id="Dirección" name="Dirección" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="DNI">DNI</label></p>
+                    <input type="text" id="DNI" name="DNI" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Correo">Tu Correo </label></p>
+                    <input type="text" id="Correo" name="Correo" size="30" maxlength="30"/><br>
+                    <a href="https://hugosilvabenitez.github.io/LM.github.io/" target="_blank">INDICE</a>
+                </td>
+
+                <td style="background-color: #f1f8e9; width: 50%;" valign="top">
+                    <h3 style="font-family: Sans-serif">DATOS ACADÉMICOS</h3>
+                    <p id="p">¿Qué estudios tienes?</p>
+                    <input type="checkbox" id="PRIMARIA" name="PRIMARIA">
+                    <label for="PRIMARIA">PRIMARIA</label><br/>
+                    <input type="checkbox" id="ESO" name="ESO">
+                    <label for="ESO">ESO</label><br/>
+                    <input type="checkbox" id="BACHILLER" name="BACHILLER">
+                    <label for="BACHILLER">BACHILLER</label><br/>
+                    <input type="checkbox" id="CFGM" name="CFGM">
+                    <label for="CFGM">CFGM</label><br/>
+                    <input type="checkbox" id="CFGS" name="CFGS">
+                    <label for="CFGS">CFGS</label><br/>
+                    <input type="checkbox" id="UNIVERSIDAD" name="UNIVERSIDAD">
+                    <label for="UNIVERSIDAD">UNIVERSIDAD</label><br/>
+                    
+                    <div class="transformado">
+                        <h3 style="font-family: Sans-serif">EXPERIENCIA LABORAL</h3>
+                        <p id="p"><label for="estudios">¿Qué experiencia laboral tienes?</label></p>
+                        <select id="estudios" name="estudios">
+                            <option>Servicio</option>
+                            <option>Industria</option>
+                            <option>Construcción</option>
+                            <option>Comercio</option>
+                            <option>Ingeniería</option>
+                        </select>
+                        <p id="p"><label for="estudios">Duración </label></p>
+                        <input type="text" id="Duración" name="Duración" size="30" maxlength="30"/><br>
+                        <p id="p"><label for="estudios">Empresa </label></p>
+                        <input type="text" id="Empresa" name="Empresa" size="30" maxlength="30"/><br>
+                    </div>
+               
+            </tr>
+
+            <tr>
+                <td style="background-color: #977222; width: 50%;" valign="top">
+                    <h3 style="font-family: Sans-serif">IDIOMAS</h3>
+                    <div style=" padding: 10px;">
+                        <!-- idioma -->
+                        <p>
+                        <input type="checkbox" id="Inglés" name="Inglés">
+                        <label for="Inglés">Inglés</label><br/>
+                        <select name="ingles_hablado">
+                        <option>Hablado: Bajo</option>
+                        <option>Hablado: Medio</option>
+                        <option>Hablado: Alto</option>
+                        </select>
+                        <select name="ingles_escrito">
+                        <option>Escrito: Bajo</option>
+                        <option>Escrito: Medio</option>
+                        <option>Escrito: Alto</option>
+                        </select>
+                        </p>
+                        <!-- idioma -->
+                        <p>
+                        <input type="checkbox" id="Francés" name="Francés">
+                        <label for="Francés">Francés</label><br/>
+                        <select name="frances_hablado">
+                        <option>Hablado: Bajo</option>
+                        <option>Hablado: Medio</option>
+                        <option>Hablado: Alto</option>
+                        </select>
+                        <select name="frances_escrito">
+                        <option>Escrito: Bajo</option>
+                        <option>Escrito: Medio</option>
+                        <option>Escrito: Alto</option>
+                        </select>
+                        </p>
+                        <!-- idioma -->
+                        <p>
+                        <input type="checkbox" id="Alemán" name="Alemán">
+                        <label for="Alemán">Alemán</label><br/>
+                        <select name="aleman_hablado">
+                        <option>Hablado: Bajo</option>
+                        <option>Hablado: Medio</option>
+                        <option>Hablado: Alto</option>
+                        </select>
+                        <select name="aleman_escrito">
+                        <option>Escrito: Bajo</option>
+                        <option>Escrito: Medio</option>
+                        <option>Escrito: Alto</option>
+                        </select>
+                        </p>
+                        <!-- idioma -->
+                        <p>
+                        <input type="checkbox" id="Otro" name="Otro">
+                        <label for="Otro">Otro </label><input type="text" name="otro_idioma" placeholder="Especificar" style="width: 100px;">
+                        <br>
+                        <select name="otro_hablado">
+                        <option>Hablado: Bajo</option>
+                        <option>Hablado: Medio</option>
+                        <option>Hablado: Alto</option>
+                        </select>
+                        <select name="otro_escrito">
+                        <option>Escrito: Bajo</option>
+                        <option>Escrito: Medio</option>
+                        <option>Escrito: Alto</option>
+                        </select>
+                        </p>
+                        </td>
+                        </div>
+                </td>
+
+                <td style="background-color: #629bf1; width: 50%;" valign="top">
+                    <h3 style="font-family: Sans-serif">APTITUDES PERSONALES</h3>
+                    <p id="p"><label for="comentario">Escribe cómo te defines</label></p>
+                    <textarea id="comentario" name="comentario" rows="3" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" style="padding: 15px;">
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Borrar datos">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
